@@ -1,0 +1,145 @@
+
+:root{
+    background-color: #faf9f9;
+}
+ 
+header{
+    font-family: 'Permanent Marker', cursive;
+}
+ 
+nav{
+    overflow: hidden;
+    background-color: #edb879;
+    margin: 0;
+    padding: 0;
+}
+ 
+nav li{
+    float: left;
+    list-style-type: none;
+}
+ 
+nav li a{
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: larger;
+    color:  #13181b;
+}
+ 
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 250px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+}
+ 
+.article{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+ 
+.main{
+    background-color: #e3e2dc;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+ 
+button{
+    background-color: #edb879;
+}
+ 
+hr{
+    width: 75%;
+    height: 5px;
+    border-width: 0;
+    color: #13181b;
+    background-color: #13181b;
+}
+ 
+.aside{
+    background-color: #13181b;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-decoration: none;
+}
+ 
+.aside li a:visited{
+    color: white;
+    text-decoration: none;
+}
+ 
+.footer{
+    grid-column: 1 / span2;
+    grid-row: 3;
+    max-width: 100%;
+    text-align: center;
+    background-image: url("Ash.jpg");
+}
+ 
+h4{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ 
+ 
+ 
+@media only screen and (max-width: 600px){
+   
+  
+ 
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: .25fr .5fr .05fr .05fr;
+    }
+   
+    .grid img{
+            max-width: 100%;
+            height: auto;
+    }
+ 
+    .grid video{
+        max-width: 100%;
+        height: auto;
+    }
+ 
+    .article{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .main{
+        background-color: #e3e2dc;
+        grid-column: 1;
+        grid-row: 2;
+    }
+ 
+    .aside{
+        background-color: #13181b;
+        color: white;
+        grid-column: 1;
+        grid-row: 3;
+    }
+ 
+    .footer{
+        grid-column: 1;
+        grid-row: 4;
+    }
+ 
+    .footer img{
+        width:32px;
+    }
+ 
+    .footer icons{
+        clear: both;
+    }
+ 
+}
